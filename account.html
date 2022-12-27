@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="dashboard">
+            <header class="header">
+                <a href="#" class="header-logo__link">
+                    <img src="images/Offer.svg" alt="logo" class="header__logo">
+                </a>
+                <div class="header-right-block">
+                    <ul class="header-right-block-menu">
+                        <li class="header-right-block-menu__item">
+                            <a href="#" class="header-right-block-menu__link">Инвесторы</a>
+                        </li>
+                        <li class="header-right-block-menu__item">
+                            <a href="#" class="header-right-block-menu__link">Бизнесы</a>
+                        </li>
+                    </ul>
+                    <div class="header-right-block-user">
+
+                        <div class="header-right-block-user-img">
+                            <div class="header-right-block-user-img__push"></div>
+                            <img src="images/avatar.png" alt="avatar" class="header-right-block-user__img">
+                        </div>
+                        <ul class="header-right-block-user-menu">
+                            <li class="header-right-block-user-menu__item">
+                                <a href="#" class="header-right-block-user-menu__link">Личный кабинет</a>
+                            </li>
+                            <li class="header-right-block-user-menu__item">
+                                <a href="#" class="header-right-block-user-menu__link">Настройки</a>
+                            </li>
+                            <li class="header-right-block-user-menu__item">
+                                <a href="#" class="header-right-block-user-menu__link">Выход</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <section class="information">
+                <nav class="navbar">
+                    <div class="navbar-user">
+                        <img src="images/avatar.png" alt="" class="navbar-user__avatar">
+                        <div class="navbar-user__name">Гайдарбеков Муллахаджи</div>
+                        <div class="navbar-user__email">maskovmask@mail.ru</div>
+                    </div>
+                    <ul class="navbar-menu">
+                        <li class="navbar-menu-item navbar-menu-item__active">
+                            <a href="" class="navbar-menu__link">
+                                <img src="images/dashboardIcon/Vector.svg" alt="Иконка главного" class="navbar-menu-item__icon">
+                                <div class="navbar-menu-item__title">Главная</div>
+                            </a>
+                        </li>
+                        <li class="navbar-menu-item">
+                            <a href="" class="navbar-menu__link">
+                                <img src="images/dashboardIcon/Group%20854.svg" alt="Иконка главного" class="navbar-menu-item__icon">
+                                <div class="navbar-menu-item__title">Пользователи</div>
+                            </a>
+                        </li>
+                        <li class="navbar-menu-item">
+                            <a href="" class="navbar-menu__link">
+                                <img src="images/dashboardIcon/Vector-1.svg" alt="Иконка главного" class="navbar-menu-item__icon">
+                                <div class="navbar-menu-item__title">Аккаунт</div>
+                            </a>
+                        </li>
+                        <li class="navbar-menu-item">
+                            <a href="" class="navbar-menu__link">
+                                <img src="images/dashboardIcon/settings.svg" alt="Иконка главного" class="navbar-menu-item__icon">
+                                <div class="navbar-menu-item__title">Настройки</div>
+                            </a>
+                        </li>
+                        <li class="navbar-menu-item">
+                            <a href="" class="navbar-menu__link">
+                                <img src="images/dashboardIcon/Vector-2.svg" alt="Иконка главного" class="navbar-menu-item__icon">
+                                <div class="navbar-menu-item__title">Выход</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+
+                <div class="dashboard-content">
+                    <div class="commercial">Реклама</div>
+                    <section class="content-roles">
+                      <div class="content-row_bd">
+                        <ui-card class="content-header-card">
+                          <div class="content-header-card__title">
+                            <strong>Инвесторы</strong>
+                          </div>
+                          <div class="content-header-card__img __investor"> <img src="images/investor-img.png" alt=""></div>
+                          <button class="content-header-card__btn" @click="$router.push('/users')">Перейти</button>
+                        </ui-card>
+                        <div class="content-row-body">
+                          <h6 class="content-row-body__header">Инвесторы</h6>
+                        <a  class="ui-card-user" href="@">
+                            <img class="ui-card-user__image" src="images/avatar-investor.svg" alt="">
+                            <h6 class="ui-card-user__name">Жасмин <br> Адамова</h6>
+                            <h6 class="ui-card-user__title">Индивидуальный предприниматель</h6>
+                            <hr class="hre">
+                            <span class="ui-card-user__info">респ. Дагестан, гор. Махачкала</span>
+                            <span class="ui-card-user__info">Аэрокосмическая отрасль</span>
+                          <a>
+                            <a  class="ui-card-user" href="@">
+                                <img class="ui-card-user__image" src="images/avatar-investor2.svg" alt="">
+                                <h6 class="ui-card-user__name">Гаджимагомед <br> Абусуфьянов</h6>
+                                <h6 class="ui-card-user__title">Индивидуальный предприниматель</h6>
+                                <hr class="hre">
+                                <span class="ui-card-user__info">респ. Дагестан, гор. Махачкала</span>
+                                <span class="ui-card-user__info">Аэрокосмическая отрасль</span>
+                              <a>
+                                <a  class="ui-card-user" href="@">
+                                    <img class="ui-card-user__image" src="images/avatar-investor3.svg" alt="">
+                                    <h6 class="ui-card-user__name">Залимхан <br> Авлаков</h6>
+                                    <h6 class="ui-card-user__title">Индивидуальный предприниматель</h6>
+                                    <hr class="hre">
+                                    <span class="ui-card-user__info">респ. Дагестан, гор. Махачкала</span>
+                                    <span class="ui-card-user__info">Аэрокосмическая отрасль</span>
+                                  <a>
+                        </div>
+                      </div>
+                      <div class="content-row">
+                        <ui-card class="content-header-card">
+                          <div class="content-header-card__title">
+                            <strong>Бизнесы</strong>
+                          </div>
+                          <div class="content-header-card__img __business"> <img src="images/biznes-img.png" alt=""></div>
+                          <button class="content-header-card__btn" @click="$router.push('__businesses')">Перейти</button>
+                        <div class="content-row-body">
+                          <h6 class="content-row-body__header">Бизнесы</h6>
+
+                          <a  class="ui-card-user" href="@">
+                            <img class="ui-card-business__image" src="images/avatar-business.svg" alt="">
+                            <h6 class="ui-card-business__name">Tesla</h6>
+                            <h6 class="ui-card-business__title">Производитель электромобилей</h6>
+                            <hr class="hre">
+                            <span class="ui-card-business__info">Кремниевая долина</span>
+                            <span class="ui-card-business__info">Машиностроение</span>
+                          <a>
+
+                            <a  class="ui-card-business" href="@">
+                                <img class="ui-card-business__image" src="images/avatar-business2.svg" alt="">
+                                <h6 class="ui-card-business__name">Intel </h6>
+                                <h6 class="ui-card-business__title">Разработчик и производитель электронных устройств</h6>
+                                <hr class="hre">
+                                <span class="ui-card-v__info">Силиконовая долина</span>
+                                <span class="ui-card-business__info">Электронные компоненты</span>
+                              <a>
+
+                                <a  class="ui-card-business" href="@">
+                                    <img class="ui-card-business__image" src="images/avatar-business3.svg" alt="">
+                                    <h6 class="ui-card-business__name">GeekBrains</h6>
+                                    <h6 class="ui-card-business__title">Образовательная платформа</h6>
+                                    <hr class="hre">
+                                    <span class="ui-card-business__info">гор. Москва</span>
+                                    <span class="ui-card-business__info">Онлайн образование</span>
+                                  <a>
+                          <a>
+
+                            <a class="ui-card-more__link" href="@">Посмотреть ещё 437 ... 
+                                <img class="ui-card--more__image" src="images/arrow.svg" alt=""></a>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="additional">
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
